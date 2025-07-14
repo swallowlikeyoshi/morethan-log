@@ -2,11 +2,11 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "swallowlikeyoshi",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "SKKU SCE 25",
     bio: "대학생입니다.",
     email: "xingchen8837@gmail.com",
-    linkedin: "morethanmin",
+    linkedin: "",
     github: "swallowlikeyoshi",
     instagram: "swallowlikeyoshi",
   },
@@ -15,10 +15,14 @@ const CONFIG = {
       name: `morethan-log`,
       href: "https://github.com/swallowlikeyoshi/morethan-log",
     },
+    {
+      name: `HDR in Web`,
+      href: "https://github.com/swallowlikeyoshi/hdr_image_demo.git",
+    }
   ],
   // blog setting (required)
   blog: {
-    title: "Yoshi's log",
+    title: "김밥에는 도라지와 현미밥",
     description: "not a code but the heart",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
