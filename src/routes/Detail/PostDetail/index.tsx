@@ -26,6 +26,12 @@ const PostDetail: React.FC<Props> = () => {
             </Category>
           </div>
         )}
+        {data.type[0] === "Post" && (
+          <>
+            <Footer />
+            <CommentBox data={data} />
+          </>
+        )}
         {data.type[0] === "Post" && <PostHeader data={data} />}
         <div>
           <NotionRenderer recordMap={data.recordMap} />
