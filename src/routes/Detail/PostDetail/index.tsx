@@ -19,18 +19,18 @@ const PostDetail: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <article>
+        {data.type[0] === "Post" && (
+          <>
+            <Footer />
+            <CommentBox data={data} />
+          </>
+        )}
         {category && (
           <div css={{ marginBottom: "0.5rem" }}>
             <Category readOnly={data.status?.[0] === "PublicOnDetail"}>
               {category}
             </Category>
           </div>
-        )}
-        {data.type[0] === "Post" && (
-          <>
-            <Footer />
-            <CommentBox data={data} />
-          </>
         )}
         {data.type[0] === "Post" && <PostHeader data={data} />}
         <div>
