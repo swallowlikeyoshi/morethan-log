@@ -5,25 +5,26 @@ import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
 const AppleMusicCard: React.FC = () => {
-  if (!CONFIG.projects) return null
   return (
     <>
       <StyledTitle>
         <Emoji>🎸</Emoji> PlayList
       </StyledTitle>
       <StyledWrapper>
-        {/* {CONFIG.projects.map((project, idx) => (
-          <a
-            key={idx}
-            href={`${project.href}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiFillCodeSandboxCircle className="icon" />
-            <div className="name">{project.name}</div>
-          </a>
-        ))} */}
-        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/kr/playlist/%EB%8D%94-%EB%84%93%EC%9D%80-%EC%84%B8%EC%83%81%EA%B3%BC%EC%9D%98-%EC%A1%B0%EC%9A%B0/pl.u-gxblkMRC58DvZYN"></iframe>
+        <iframe
+          title="Apple Music Playlist"
+          allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+          frameBorder="0"
+          height="450"
+          style={{
+            width: "100%",
+            maxWidth: "660px",
+            overflow: "hidden",
+            borderRadius: "10px"
+          }}
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+          src="https://embed.music.apple.com/kr/playlist/%EB%8D%94-%EB%84%93%EC%9D%80-%EC%84%B8%EC%83%81%EA%B3%BC%EC%9D%98-%EC%A1%B0%EC%9A%B0/pl.u-gxblkMRC58DvZYN"
+        />
       </StyledWrapper>
     </>
   )
