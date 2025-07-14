@@ -4,7 +4,7 @@ const CONFIG = {
     name: "swallowlikeyoshi",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "SKKU SCE 25",
-    bio: "not a code but the heart",
+    bio: "대학생입니다.",
     email: "xingchen8837@gmail.com",
     linkedin: "morethanmin",
     github: "swallowlikeyoshi",
@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "yoshi's log",
+    title: "Yoshi's log",
     description: "not a code but the heart",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
