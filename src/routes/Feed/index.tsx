@@ -11,6 +11,7 @@ import ServiceCard from "./ServiceCard"
 import ContactCard from "./ContactCard"
 import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
+import AppleMusicCard from "./AppleMusicCard"
 
 const HEADER_HEIGHT = 73
 
@@ -50,6 +51,7 @@ const Feed: React.FC<Props> = () => {
       >
         <ProfileCard />
         <ServiceCard />
+        <AppleMusicCard />
         <ContactCard />
         <div className="footer">
           <Footer />
